@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="top-menu">
+      <div><BackRef v-if="back" /></div>
       <div>
         <div @click="langOpened = !langOpened" class="selected-lang" :class="{ opened: langOpened }">
           <div v-if="state.lang === 'sr'" class="lang">
@@ -57,6 +58,12 @@ import { ref } from 'vue'
 import state from '@/state'
 
 export default {
+  props: {
+    back: {
+      type: Boolean,
+      default: false
+    }
+  },
   setup() {
     const langOpened = ref(false)
     return {

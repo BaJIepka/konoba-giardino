@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/pages/home/HomePage'
-import MenuPage from '@/pages/menu/MenuPage'
+import CategoryPage from '@/pages/category/CategoryPage'
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/menu',
-    name: 'Menu',
-    component: MenuPage
+    path: '/categ/:code',
+    name: 'Category',
+    component: CategoryPage
   }
 ]
 
