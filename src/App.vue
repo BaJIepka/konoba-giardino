@@ -11,8 +11,7 @@ export default {
       const meta = document.querySelector('meta[name="viewport"]')
       if (window.outerWidth >= 390) {
         meta.content = 'width=390'
-      }
-      else {
+      } else {
         meta.content = 'width=device-width,initial-scale=1.0'
       }
     }

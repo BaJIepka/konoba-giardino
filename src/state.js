@@ -3,8 +3,7 @@ import { reactive, watch } from 'vue'
 let cart = localStorage.getItem('cart')
 if (cart) {
   cart = JSON.parse(cart)
-}
-else {
+} else {
   cart = {}
 }
 const state = reactive({

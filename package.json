@@ -41,7 +41,14 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "space-before-function-paren": ["error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }],
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
