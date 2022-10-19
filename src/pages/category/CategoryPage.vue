@@ -1,5 +1,5 @@
 <template>
-  <BaseLayout>
+  <BaseLayout back>
     <h3>{{ categ.name }}</h3>
     <div v-for="(item, j) in categ.items" :key="j" class="dish-box mt-10">
       <div v-if="item.img"><img :src="item.img" alt=""></div>
@@ -64,9 +64,12 @@ export default {
 .dish-counts > div {
   background: #32488d;
   color: white;
-  padding: 3px;
+  padding: 1px 3px 5px 3px;
   text-align: center;
   width: 30px;
+  user-select: none;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .dish-add-button {
   border-radius: 3px;

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <span class="backref" @click="router.back()">Назад</span>
+    <span class="backref" @click="router.back()">
+      <img src="@/assets/img/back.png" alt>
+    </span>
   </div>
 </template>
 
@@ -21,6 +23,10 @@ export default {
   color: #aaaaaa;
   cursor: pointer;
   font-weight: bold;
+  padding-right: 10px;
+}
+.backref img {
+  height: 25px;
 }
 .backref:hover {
   color: #999999;

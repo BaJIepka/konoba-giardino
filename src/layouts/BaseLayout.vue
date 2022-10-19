@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="top-menu">
-      <div><BackRef v-if="back" /></div>
+      <BackRef v-if="back" />
+      <div v-else />
       <div>
         <div @click="langOpened = !langOpened" class="selected-lang" :class="{ opened: langOpened }">
           <div v-if="state.lang === 'sr'" class="lang">
@@ -17,7 +18,7 @@
             RU
           </div>
           <div v-else-if="state.lang === 'it'" class="lang">
-            <img src="@/assets/img/flags/ru.png" alt>
+            <img src="@/assets/img/flags/it.png" alt>
             IT
           </div>
         </div>
@@ -35,9 +36,15 @@
             RU
           </div>
           <div @click="state.lang = 'it'" class="lang" :class="{ selected: state.lang === 'it' }">
-            <img src="@/assets/img/flags/ru.png" alt>
+            <img src="@/assets/img/flags/it.png" alt>
             IT
           </div>
+        </div>
+      </div>
+      <div class="text-right">
+        <div class="cart">
+          <img src="@/assets/img/cart.svg">
+          <span class="ml-5">€{{ cartTotal }}</span>
         </div>
       </div>
     </div>
@@ -54,8 +61,9 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import state from '@/state'
+import menu from '@/menu'
 
 export default {
   props: {
@@ -66,9 +74,14 @@ export default {
   },
   setup() {
     const langOpened = ref(false)
+    const prices = Object.fromEntries(menu.value.map(c => c.items).flat().map(d => [d.id, d.price]))
+    const cartTotal = computed(() => {
+      return Object.entries(state.cart).reduce((acc, [id, count]) => acc + prices[id] * count, 0).toFixed(2)
+    })
     return {
       state,
-      langOpened
+      langOpened,
+      cartTotal
     }
   }
 }
@@ -86,32 +99,31 @@ export default {
   padding: 8px;
 }
 .top-menu {
-  background: #eeeeee;
+  background: #2e1210;
   padding: 5px 15px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.top-menu > div {
+  flex: 1;
 }
 .lang-select {
   position: absolute;
   top: 100%;
-  background: #eeeeee;
+  background: #2e1210;
   z-index: 1;
   padding: 5px;
   width: 100%;
+  color: white;
 }
 .selected-lang {
   display: inline-block;
   padding-right: 25px;
-}
-.selected-lang::after {
-  content: '⮟';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.selected-lang.opened::after {
-  content: '⮝';
 }
 .lang {
   display: flex;
@@ -120,7 +132,7 @@ export default {
 }
 .lang.selected {
   font-weight: bold;
-  background: #aaaaaa;
+  background: #913030;
 }
 .lang:not(:first-child) {
   margin-top: 5px;
@@ -135,5 +147,14 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.cart {
+  background: #32488d;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 </style>
