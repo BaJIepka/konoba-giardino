@@ -24,6 +24,7 @@
 
 <script>
 import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 import state from '@/state'
 import menu from '@/menu'
 
@@ -31,7 +32,7 @@ export default {
   setup() {
     const route = useRoute()
     return {
-      categ: menu.value.find(c => c.code === route.params.code),
+      categ: computed(() => menu.value.find(c => c.code === route.params.code)),
       state
     }
   }
