@@ -1,9 +1,9 @@
 import i18n from './i18n'
 
 export default {
-  name: i18n('Пића', 'Drinks', 'Напитки'),
+  name: i18n('Пића', 'Drinks', 'Напитки', 'Bevande'),
   code: 'drinks',
-  img: require('@/assets/img/categories/starters/_starters.jpg'),
+  img: require('@/assets/img/categories/drinks/_drinks.jpeg'),
   items: [
     // CAFFE
     {
@@ -49,7 +49,8 @@ export default {
         '',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/nescafe.png')
     },
     {
       name: i18n('Ledena kafa', 'Ice coffe', 'Ice coffe', 'Ice coffe'),
@@ -58,7 +59,8 @@ export default {
         '',
         ''
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/drinks/ice-coffe.png')
     },
     {
       name: i18n('Topla cokolada', 'Hot chocolate', 'Горячий шоколад', 'Hot chocolate'),
@@ -67,7 +69,8 @@ export default {
         '',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/hot-chocolate.jpg')
     },
     {
       name: i18n('Caj', 'Tea', 'Чай', 'Tea'),
@@ -76,8 +79,8 @@ export default {
         '',
         ''
       ),
-      price: 1.50
-
+      price: 1.50,
+      img: require('@/assets/img/categories/drinks/tea.jpg')
     },
 
     // soki
@@ -97,7 +100,8 @@ export default {
         '200 ml',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/orange-bottle.jpg')
     },
     {
       name: i18n('Cijed narandza', 'Natural orange juice', 'Свежевыжатый апельсиновый сок', 'Natural orange juice'),
@@ -106,7 +110,8 @@ export default {
         '200 ml',
         ''
       ),
-      price: 4.50
+      price: 4.50,
+      img: require('@/assets/img/categories/drinks/orange-juice.jpg')
     },
     {
       name: i18n('Limunada', 'Lemonade', 'Лимонад', 'Lemonade'),
@@ -115,7 +120,8 @@ export default {
         '200 ml',
         ''
       ),
-      price: 3.50
+      price: 3.50,
+      img: require('@/assets/img/categories/drinks/limonade.jpg')
     },
     {
       name: i18n('Cola/Fanta/Sprite', 'Cola/Fanta/Sprite', 'Cola/Fanta/Sprite', 'Cola/Fanta/Sprite'),
@@ -124,7 +130,8 @@ export default {
         '250 ml',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/colafantasprite.jpg')
     },
     {
       name: i18n('Schweppes tonic, bitter', 'Schweppes tonic, bitter', 'Schweppes tonic, bitter', 'Schweppes tonic, bitter'),
@@ -133,7 +140,8 @@ export default {
         '330 ml',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/schweppes.jpg')
     },
     {
       name: i18n('Limenke (Cola, Fanta, Bravo)', 'Limenke (Cola, Fanta, Bravo)', 'Limenke (Cola, Fanta, Bravo)', 'Limenke (Cola, Fanta, Bravo)'),
@@ -142,7 +150,8 @@ export default {
         '330 ml',
         ''
       ),
-      price: 3.00
+      price: 3.00,
+      img: require('@/assets/img/categories/drinks/colafantasprite.jpg')
     },
     {
       name: i18n('Red Bull', 'Red Bull', 'Red Bull', 'Red Bull'),
@@ -151,7 +160,53 @@ export default {
         '330 ml',
         ''
       ),
-      price: 5.00
+      price: 5.00,
+      img: require('@/assets/img/categories/drinks/redbull.jpg')
+    },
+    // voda
+    {
+      name: i18n('Gazirana voda', 'Mineral water', 'Минеральная вода', 'Mineral water'),
+      description: i18n(
+        '1000 ml',
+        '1000 ml',
+        '1000 ml',
+        ''
+      ),
+      price: 4.50,
+      img: require('@/assets/img/categories/drinks/knjazmilosh1000.jpg')
+    },
+    {
+      name: i18n('Gazirana voda', 'Mineral water', 'Минеральная вода', 'Mineral water'),
+      description: i18n(
+        '250 ml',
+        '250 ml',
+        '250 ml',
+        ''
+      ),
+      price: 2.00,
+      img: require('@/assets/img/categories/drinks/knjazmilosh1000.jpg')
+    },
+    {
+      name: i18n('Negazirana voda', 'Mineral water', 'Вода', 'Natural water'),
+      description: i18n(
+        '1000 ml',
+        '1000 ml',
+        '1000 ml',
+        ''
+      ),
+      price: 4.50,
+      img: require('@/assets/img/categories/drinks/rosa1000.jpg')
+    },
+    {
+      name: i18n('Negazirana voda', 'Mineral water', 'Вода', 'Natural water'),
+      description: i18n(
+        '250 ml',
+        '250 ml',
+        '250 ml',
+        ''
+      ),
+      price: 2.00,
+      img: require('@/assets/img/categories/drinks/rosa1000.jpg')
     }
   ]
 }

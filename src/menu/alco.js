@@ -1,9 +1,9 @@
 import i18n from './i18n'
 
 export default {
-  name: i18n('Алкохол', 'Alcohol', 'Алкоголь'),
+  name: i18n('Алкохол', 'Alcohol', 'Алкоголь', 'Alcol'),
   code: 'alco',
-  img: require('@/assets/img/categories/starters/_starters.jpg'),
+  img: require('@/assets/img/categories/alko/_alko.jpg'),
   items: [
     // beer
     {
@@ -312,6 +312,27 @@ export default {
     {
       name: i18n('Jagermeister', 'Jagermeister', 'Jagermeister', 'Jagermeister'),
       description: i18n('30 ml',
+        '30 ml',
+        '30 ml',
+        ''
+      ),
+      price: 3.50
+    },
+    // liqeur
+    {
+      name: i18n('Bailey’s', 'Bailey’s', 'Bailey’s', 'Bailey’s'),
+      description: i18n(
+        '30 ml',
+        '30 ml',
+        '30 ml',
+        ''
+      ),
+      price: 3.50
+    },
+    {
+      name: i18n('Carolans', 'Carolans', 'Carolans', 'Carolans'),
+      description: i18n(
+        '30 ml',
         '30 ml',
         '30 ml',
         ''

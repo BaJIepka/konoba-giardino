@@ -1,7 +1,7 @@
 import i18n from './i18n'
 
 export default {
-  name: i18n('Десерт', 'Dessert', 'Десерт'),
+  name: i18n('Десерт', 'Dessert', 'Десерт', 'Dessert'),
   code: 'desserts',
   img: require('@/assets/img/categories/desserts/_desserts.jpg'),
   items: [

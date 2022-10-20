@@ -10,7 +10,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 22.00
     },
@@ -19,7 +20,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 24.00
     },
@@ -28,7 +30,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 24.00
     },
@@ -37,7 +40,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 22.00
     },
@@ -46,7 +50,9 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'),
+        '300 грамм',
+        ''
+      ),
       price: 24.00
     },
     {
@@ -54,7 +60,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 28.00
     },
@@ -63,7 +70,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 20.00
     },
@@ -72,7 +80,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 28.00
     },
@@ -81,7 +90,9 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'),
+        '300 грамм',
+        ''
+      ),
       price: 24.00
     },
     {
@@ -89,7 +100,9 @@ export default {
       description: i18n(
         '450 gram',
         '450 gram',
-        '450 грамм'),
+        '450 грамм',
+        ''
+      ),
       price: 45.00
     },
     {
@@ -97,7 +110,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 16.00
     },
@@ -106,7 +120,9 @@ export default {
       description: i18n(
         '450 gram',
         '450 gram',
-        '450 грамм'),
+        '450 грамм',
+        ''
+      ),
       price: 22.00
     },
     {
@@ -114,7 +130,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 14.00
     },
     {
@@ -122,7 +140,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 15.00
     },
     {
@@ -130,7 +150,8 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'
+        '350 грамм',
+        ''
       ),
       price: 16.00
     },
@@ -139,7 +160,8 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'
+        '350 грамм',
+        ''
       ),
       price: 20.00
     },
@@ -148,7 +170,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 20.00
     },
     {
@@ -156,7 +180,8 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'
+        '350 грамм',
+        ''
       ),
       price: 22.00
     },
@@ -174,7 +199,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 18.00
     },
     {
@@ -182,7 +209,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 16.00
     },
     {
@@ -190,7 +219,9 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 12.00
     },
     {
@@ -198,15 +229,18 @@ export default {
       description: i18n(
         '350 gram',
         '350 gram',
-        '350 грамм'),
+        '350 грамм',
+        ''
+      ),
       price: 12.00
     },
     {
       name: i18n('Karadordeva snicla', 'Steak "Karadorde"', 'Карагеоргиев Шницель', 'Bistecca "Karadorde"'),
       description: i18n(
-        // 'Направљен од најбољих састојака са најбољих места на свету. Гурмани долазе из целог света да пробају',
-        // 'Made with the best ingredients from the best places in the world. Gourmets come from all over the world to try it',
-        // 'Приготовлено из лучших ингридиентов, собранных из самых лучших мест мира. Гурманы приезжают со всего света, чтобы это попробовать'
+        'Направљен од најбољих састојака са најбољих места на свету. Гурмани долазе из целог света да пробају',
+        'Made with the best ingredients from the best places in the world. Gourmets come from all over the world to try it',
+        'Приготовлено из лучших ингридиентов, собранных из самых лучших мест мира. Гурманы приезжают со всего света, чтобы это попробовать',
+        ''
       ),
       price: 15.00
     },
@@ -215,7 +249,8 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'
+        '300 грамм',
+        ''
       ),
       price: 11.00
     },
@@ -224,7 +259,9 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'),
+        '300 грамм',
+        ''
+      ),
       price: 12.00
     },
     {
@@ -232,7 +269,9 @@ export default {
       description: i18n(
         '300 gram',
         '300 gram',
-        '300 грамм'),
+        '300 грамм',
+        ''
+      ),
       price: 11.00
     },
     {
