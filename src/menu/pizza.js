@@ -3,7 +3,7 @@ import i18n from './i18n'
 export default {
   name: i18n('Pizza', 'Pizza', 'Пицца', 'Pizza'),
   code: 'pizza',
-  img: require('@/assets/img/categories/starters/_starters.jpg'),
+  img: require('@/assets/img/categories/pizza/_pizza.jpeg'),
   items: [
     {
       name: i18n('Margherita', 'Margherita', 'Маргарита', 'Margherita'),

@@ -1,7 +1,7 @@
 import i18n from './i18n'
 
 export default {
-  name: i18n('Салате', 'Salads', 'Салаты', ''),
+  name: i18n('Салате', 'Salads', 'Салаты', 'Insalata'),
   code: 'salads',
   img: require('@/assets/img/categories/salads/_salads.jpg'),
   items: [
@@ -10,9 +10,10 @@ export default {
       description: i18n('250 gram',
         '250 gram',
         '250 грамм',
-        ''
+        '250 gram'
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/salads/tomato.jpg')
     },
     {
       name: i18n('Krastavac', 'Cucumber', 'Огурцы', 'Certiolo'),
@@ -21,7 +22,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/salads/cucumber.jpg')
     },
     {
       name: i18n('Zelena salata', 'Lettuce', 'Зеленый салат', 'Lattuga'),
@@ -30,7 +32,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/salads/greensalad.jpeg')
     },
     {
       name: i18n('Kupus', 'Cabbage', 'Капуста', 'Cavolo'),
@@ -39,7 +42,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/salads/cabbage.jpg')
     },
     {
       name: i18n('Mjesana salata', 'Mixed salad', 'Смешанный салат', 'Insalata mista '),
@@ -48,7 +52,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 4.00
+      price: 4.00,
+      img: require('@/assets/img/categories/salads/mixedsalad.jpg')
     },
     {
       name: i18n('Tarator salata', 'Tarator salad', 'Салатор салат', 'Insalata tarator'),
@@ -57,7 +62,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 5.00
+      price: 5.00,
+      img: require('@/assets/img/categories/salads/tarator.jpg')
     },
     {
       name: i18n('Vitaminska salata', 'Vitamin salad', 'Витаминный салат', 'Insalata ricca di vitamina'),
@@ -75,7 +81,8 @@ export default {
         '250 грамм',
         ''
       ),
-      price: 4.50
+      price: 4.50,
+      img: require('@/assets/img/categories/salads/shopskij.jpeg')
     },
     {
       name: i18n('Grcka', 'Greek salad', 'Греческий салат', 'Insalata greca'),

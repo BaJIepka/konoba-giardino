@@ -3,6 +3,8 @@ import starters from './starters'
 import salads from './salads'
 import soups from './soups'
 import meat from './meat'
+import seafood from './seafood'
+import spageti from './spageti'
 import chef from './chef'
 import sale from './sale'
 import pizza from './pizza'
@@ -20,6 +22,8 @@ const menu = computed(() => {
     salads,
     soups,
     meat,
+    seafood,
+    spageti,
     chef,
     sale,
     pizza,
