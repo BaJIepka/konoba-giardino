@@ -3,6 +3,7 @@
     <h3>{{ categ.name }}</h3>
     <div v-for="(item, j) in categ.items" :key="j" class="dish-box mt-10">
       <div v-if="item.img"><img :src="item.img" alt=""></div>
+      <div v-else><img src="@/assets/img/restaurant.jpg" alt=""></div>
       <div class="dish-text">
         <div class="level mt-5">
           <div class="dish-name">{{ item.name }}</div>

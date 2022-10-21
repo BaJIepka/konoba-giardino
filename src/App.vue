@@ -75,6 +75,12 @@ img {
 .d-flex {
   display: flex;
 }
+.flex-col {
+  flex-direction: column;
+}
+.ai-end {
+  align-items: end;
+}
 .ai-center {
   align-items: center;
 }

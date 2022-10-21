@@ -14,5 +14,8 @@ const state = reactive({
 watch(() => state.lang, () => {
   localStorage.setItem('lang', state.lang)
 })
+watch(state.cart, () => {
+  localStorage.setItem('cart', JSON.stringify(state.cart))
+})
 
 export default state

@@ -42,10 +42,10 @@
         </div>
       </div>
       <div class="text-right">
-        <div class="cart">
+        <router-link to="/cart" class="cart">
           <img src="@/assets/img/cart.svg">
           <span class="ml-5">€{{ cartTotal }}</span>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="text-center">
@@ -156,5 +156,7 @@ export default {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  color: inherit;
+  text-decoration: none;
 }
 </style>
