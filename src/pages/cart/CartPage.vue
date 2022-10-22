@@ -14,8 +14,11 @@
       }}
     </div>
     <div v-for="(count, id) in state.cart" :key="id" class="dish-box level mt-5">
-      <div>
-        <div class="dish-name">{{ menuById[id].name }}</div>
+      <div class="d-flex ai-center">
+        <div class="img">
+          <img v-if="menuById[id].img" :src="menuById[id].img" alt="">
+        </div>
+        <div class="dish-name ml-15">{{ menuById[id].name }}</div>
       </div>
       <div class="d-flex flex-col ai-end">
         <div>€{{ menuById[id].price.toFixed(2) }} x {{ count }} = €{{ (menuById[id].price * count).toFixed(2) }}</div>
@@ -125,6 +128,13 @@ export default {
 }
 .dish-add-button {
   border-radius: 3px;
+}
+.img {
+  width: 80px;
+}
+.img img {
+  display: block;
+  border-radius: 7px;
 }
 .remove-btn {
   border-radius: 3px 0 0 3px;

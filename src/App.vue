@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6 {
 .ml-5 {
   margin-left: 5px !important;
 }
+.ml-15 {
+  margin-left: 15px !important;
+}
 .mt-0 {
   margin-top: 0 !important;
 }
