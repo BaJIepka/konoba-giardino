@@ -27,6 +27,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --info-color: #32488d;
+  --danger-color: #8d3232;
+}
 * {
   box-sizing: border-box;
   position: relative;
@@ -83,5 +87,21 @@ img {
 }
 .ai-center {
   align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+.button.btn-info {
+  background: var(--info-color);
+  color: white;
+}
+.button.btn-danger {
+  background: var(--danger-color);
+  color: white;
 }
 </style>

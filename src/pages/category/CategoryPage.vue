@@ -11,7 +11,7 @@
             <div class="dish-price">€{{ item.price }}</div>
             <div v-if="!state.cart[item.id]" class="dish-add-button" @click="state.cart[item.id] = 1">+</div>
             <div v-else class="d-flex dish-counts">
-              <div class="remove-btn" @click="state.cart[item.id]--">-</div>
+              <div class="remove-btn" @click="remove(item)">-</div>
               <div class="dish-count">{{ state.cart[item.id] }}</div>
               <div class="add-btn" @click="state.cart[item.id]++">+</div>
             </div>
@@ -21,20 +21,52 @@
       </div>
     </div>
   </BaseLayout>
+  <Modal v-if="removingItem" @close="removingItem = null">
+    <div class="text-center">
+      {{
+        i18n(
+          `Do you want to delete ${removingItem.name} from your order?`,
+          `Do you want to delete ${removingItem.name} from your order?`,
+          `Вы действительно хотите удалить ${removingItem.name} из Вашего заказа?`,
+          `Do you want to delete ${removingItem.name} from your order?`,
+        )
+      }}
+    </div>
+    <div class="mt-15 d-flex jc-center">
+      <div class="button btn-danger" @click="delete state.cart[removingItem.id]; removingItem = null">
+        {{ i18n('Yes', 'Yes', 'Да', 'Yes') }}
+      </div>
+      <div class="button btn-info ml-5" @click="removingItem = null">
+        {{ i18n('No', 'No', 'Нет', 'No') }}
+      </div>
+    </div>
+  </Modal>
 </template>
 
 <script>
 import { useRoute } from 'vue-router'
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
+import i18n from '@/i18n'
 import state from '@/state'
 import menu from '@/menu'
 
 export default {
   setup() {
     const route = useRoute()
+    const removingItem = ref(null)
+    const remove = (item) => {
+      if (state.cart[item.id] === 1) {
+        removingItem.value = item
+      } else {
+        state.cart[item.id]--
+      }
+    }
     return {
       categ: computed(() => menu.value.find(c => c.code === route.params.code)),
-      state
+      state,
+      i18n,
+      remove,
+      removingItem
     }
   }
 }
@@ -64,7 +96,7 @@ export default {
 }
 .dish-add-button,
 .dish-counts > div {
-  background: #32488d;
+  background: var(--info-color);
   color: white;
   padding: 1px 3px 5px 3px;
   text-align: center;

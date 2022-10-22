@@ -1,5 +1,5 @@
 <template>
-  <BaseLayout>
+  <BaseLayout showLogo>
     <div v-for="(categ, i) in menu.filter(m => m.items.length > 0)" :key="i" class="category">
       <router-link :to="`/categ/${categ.code}`" class="categ-link">
         <img :src="categ.img" alt>

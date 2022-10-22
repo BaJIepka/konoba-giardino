@@ -48,7 +48,7 @@
         </router-link>
       </div>
     </div>
-    <div class="text-center">
+    <div v-if="showLogo" class="text-center">
       <img src="@/assets/img/restaurant.jpg" alt>
       <div class="logo-wrapper">
         <img src="@/assets/img/logo.png" alt>
@@ -68,6 +68,10 @@ import menu from '@/menu'
 export default {
   props: {
     back: {
+      type: Boolean,
+      default: false
+    },
+    showLogo: {
       type: Boolean,
       default: false
     }
@@ -93,6 +97,7 @@ export default {
   max-width: 390px;
   margin: 0 auto;
   box-shadow: 0 0 5px #aaaaaa;
+  min-height: 100vh;
 }
 .container {
   margin: 0 auto;
@@ -149,7 +154,7 @@ export default {
   transform: translate(-50%, -50%);
 }
 .cart {
-  background: #32488d;
+  background: var(--info-color);
   display: inline-flex;
   align-items: center;
   padding: 5px 10px;
