@@ -33,11 +33,14 @@ const menu = computed(() => {
   ].map(c => ({
     ...c,
     name: c.name[state.lang],
-    items: c.items.map(d => ({
-      ...d,
-      id: `${version}.${++i}`,
-      name: d.name[state.lang],
-      description: d.description[state.lang]
+    divs: c.divs.map(div => ({
+      name: div.name[state.lang],
+      items: div.items.map(d => ({
+        ...d,
+        id: `${version}.${++i}`,
+        name: d.name[state.lang],
+        description: d.description[state.lang]
+      }))
     }))
   }))
 })

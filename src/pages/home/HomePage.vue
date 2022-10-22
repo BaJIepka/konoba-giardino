@@ -1,6 +1,14 @@
 <template>
-  <BaseLayout showLogo>
-    <div v-for="(categ, i) in menu.filter(m => m.items.length > 0)" :key="i" class="category">
+  <BaseLayout isMainPage>
+    <template v-slot:top>
+      <div class="text-center">
+        <img src="@/assets/img/restaurant.jpg" alt>
+        <div class="logo-wrapper">
+          <img src="@/assets/img/logo.png" alt>
+        </div>
+      </div>
+    </template>
+    <div v-for="(categ, i) in menu.filter(m => m.divs[0].items.length > 0)" :key="i" class="category">
       <router-link :to="`/categ/${categ.code}`" class="categ-link">
         <img :src="categ.img" alt>
         <div class="categ-name">{{ categ.name }}</div>
@@ -43,5 +51,11 @@ export default {
   color: white;
   text-shadow: 0 0 3px black;
   font-size: 1.6em;
+}
+.logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

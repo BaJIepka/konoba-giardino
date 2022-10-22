@@ -1,23 +1,39 @@
 <template>
-  <BaseLayout back>
-    <h3>{{ categ.name }}</h3>
-    <div v-for="(item, j) in categ.items" :key="j" class="dish-box mt-10">
-      <div v-if="item.img"><img :src="item.img" alt=""></div>
-      <div v-else><img src="@/assets/img/restaurant.jpg" alt=""></div>
-      <div class="dish-text">
-        <div class="level mt-5">
-          <div class="dish-name">{{ item.name }}</div>
-          <div class="d-flex ai-center">
-            <div class="dish-price">€{{ item.price }}</div>
-            <div v-if="!state.cart[item.id]" class="dish-add-button" @click="state.cart[item.id] = 1">+</div>
-            <div v-else class="d-flex dish-counts">
-              <div class="remove-btn" @click="remove(item)">-</div>
-              <div class="dish-count">{{ state.cart[item.id] }}</div>
-              <div class="add-btn" @click="state.cart[item.id]++">+</div>
-            </div>
+  <BaseLayout>
+    <template v-if="categ.divs.length > 1" v-slot:submenu>
+      <div class="divs-wrapper">
+        <div class="d-flex ai-center">
+          <div v-for="(div, di) in categ.divs" :key="di" class="div-button" :class="{ active: di === activeDiv }" @click="scrollTo(di)">
+            {{ div.name }}
           </div>
         </div>
-        <div class="dish-desc mt-10">{{ item.description }}</div>
+      </div>
+    </template>
+    <template v-slot:title>
+      <h2 class="text-center">{{ categ.name }}</h2>
+    </template>
+    <div class="divs" ref="divsRef">
+      <div v-for="(div, di) in categ.divs" :key="di" class="mt-15">
+        <div class="div-name" v-if="categ.divs.length > 1">{{ div.name }}</div>
+        <div v-for="(item, j) in div.items" :key="j" class="dish-box mt-10">
+          <div v-if="item.img"><img :src="item.img" alt=""></div>
+          <div v-else><img src="@/assets/img/restaurant.jpg" alt=""></div>
+          <div class="dish-text">
+            <div class="level mt-5">
+              <div class="dish-name">{{ item.name }}</div>
+              <div class="d-flex ai-center">
+                <div class="dish-price">€{{ item.price }}</div>
+                <div v-if="!state.cart[item.id]" class="dish-add-button" @click="state.cart[item.id] = 1">+</div>
+                <div v-else class="d-flex dish-counts">
+                  <div class="remove-btn" @click="remove(item)">-</div>
+                  <div class="dish-count">{{ state.cart[item.id] }}</div>
+                  <div class="add-btn" @click="state.cart[item.id]++">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="dish-desc mt-10">{{ item.description }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </BaseLayout>
@@ -45,7 +61,7 @@
 
 <script>
 import { useRoute } from 'vue-router'
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import i18n from '@/i18n'
 import state from '@/state'
 import menu from '@/menu'
@@ -61,18 +77,66 @@ export default {
         state.cart[item.id]--
       }
     }
+    const categ = computed(() => menu.value.find(c => c.code === route.params.code))
+    const divsRef = ref(null)
+    const activeDiv = ref(0)
+    let topMenuOffset
+    const scrollTo = (divIdx) => {
+      const { top } = divsRef.value.children[divIdx].getBoundingClientRect()
+      window.scrollTo(0, top - topMenuOffset + window.scrollY)
+    }
+    const onWindowScroll = () => {
+      activeDiv.value = Math.max([...divsRef.value.children].findLastIndex(div => {
+        return div.getBoundingClientRect().top <= topMenuOffset + 1
+      }), 0)
+    }
+    onMounted(() => {
+      window.scrollTo(0, 0)
+      topMenuOffset = document.querySelector('.top-menu').offsetHeight + 10
+      window.addEventListener('scroll', onWindowScroll)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('scroll', onWindowScroll)
+    })
     return {
-      categ: computed(() => menu.value.find(c => c.code === route.params.code)),
+      categ,
       state,
       i18n,
       remove,
-      removingItem
+      removingItem,
+      divsRef,
+      scrollTo,
+      activeDiv
     }
   }
 }
 </script>
 
 <style scoped>
+.divs-wrapper {
+  overflow-y: hidden;
+}
+.divs-wrapper::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+.div-button {
+  padding: 10px 10px 5px;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+  white-space: nowrap;
+}
+.div-button.active {
+  border-color: white;
+}
+.div-name {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
 .dish-box {
   border-radius: 7px;
   box-shadow: 0 0 5px #aaaaaa;

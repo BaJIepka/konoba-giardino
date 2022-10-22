@@ -4,5 +4,10 @@ export default {
   name: i18n('Од кувара', 'From the chef', 'От шефа'),
   code: 'chef',
   img: require('@/assets/img/categories/chef/_chef.jpg'),
-  items: []
+  divs: [
+    {
+      name: i18n('All', 'All', 'Всё', 'All'),
+      items: []
+    }
+  ]
 }

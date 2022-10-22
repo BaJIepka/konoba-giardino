@@ -1,6 +1,8 @@
 <template>
-  <BaseLayout back>
-    <h2>{{ i18n('Your order', 'Your order', 'Ваш заказ', 'Your order') }}</h2>
+  <BaseLayout>
+    <template v-slot:title>
+      <h2>{{ i18n('Your order', 'Your order', 'Ваш заказ', 'Your order') }}</h2>
+    </template>
     <div v-if="Object.keys(state.cart).length === 0">
       {{
         i18n(
@@ -60,7 +62,17 @@ import i18n from '@/i18n'
 
 export default {
   setup() {
-    const menuById = computed(() => Object.fromEntries(menu.value.map(c => c.items).flat().map(d => [d.id, d])))
+    const menuById = computed(() => {
+      const obj = {}
+      for (const categ of menu.value) {
+        for (const div of categ.divs) {
+          for (const item of div.items) {
+            obj[item.id] = item
+          }
+        }
+      }
+      return obj
+    })
     const removingItem = ref(null)
     const remove = (item) => {
       if (state.cart[item.id] === 1) {
