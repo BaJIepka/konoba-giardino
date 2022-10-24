@@ -16,6 +16,12 @@ export default {
             '450 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 13.00
         },
         {
@@ -24,6 +30,12 @@ export default {
             '450 gram',
             '450 gram',
             '450 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 16.00
@@ -36,6 +48,12 @@ export default {
             '450 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -44,6 +62,12 @@ export default {
             '450 gram',
             '450 gram',
             '450 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -56,6 +80,12 @@ export default {
             '450 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 10.00
         },
         {
@@ -64,6 +94,12 @@ export default {
             '450 gram Tomato sauce, spices, onions',
             '450 gram Salsa di pomodoro, spezie, cipolle',
             '450 грамм Томатный соус, специи, лук',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 9.00
@@ -76,6 +112,12 @@ export default {
             '450 грамм Томатный соус, мясо, лук',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 10.00
         },
         {
@@ -84,6 +126,12 @@ export default {
             '450 gram Bacon, egg, sour cream, onion',
             '450 gram Pancetta, uova, panna acidia, cipolla',
             '450 грамм Бекон, яйца, сметана, лук',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 10.00
@@ -96,6 +144,12 @@ export default {
             '450 грамм Горгонзола, моцарелла, гауда, пармезан',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -104,6 +158,12 @@ export default {
             '450 gram Salted fish, tuna, olives',
             '450 gram Pesce salato, tonno, olive',
             '450 грамм Соленая рыба, тунец, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00

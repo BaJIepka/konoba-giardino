@@ -39,7 +39,8 @@ const menu = computed(() => {
         ...d,
         id: `${version}.${++i}`,
         name: d.name[state.lang],
-        description: d.description[state.lang]
+        description: d.description[state.lang],
+        weight: d.weight[state.lang]
       }))
     }))
   }))

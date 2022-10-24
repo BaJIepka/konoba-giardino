@@ -15,6 +15,12 @@ export default {
             '150 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -22,6 +28,12 @@ export default {
           description: i18n('250 gram',
             '250 gram',
             '250 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.00
@@ -33,6 +45,12 @@ export default {
             '250 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 5.00
         },
         {
@@ -40,6 +58,12 @@ export default {
           description: i18n('250 gram',
             '250 gram',
             '250 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 5.00
@@ -51,6 +75,12 @@ export default {
             '250 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 5.00
         },
         {
@@ -58,6 +88,12 @@ export default {
           description: i18n('250 gram',
             '250 gram',
             '250 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.50

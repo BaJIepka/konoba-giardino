@@ -16,6 +16,12 @@ export default {
             '200 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -24,6 +30,12 @@ export default {
             '1 piece',
             '1 piece',
             '1 штука',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 5.00
@@ -36,6 +48,12 @@ export default {
             '1 штука',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 6.00
         },
         {
@@ -44,6 +62,12 @@ export default {
             '500 gram',
             '500 gram',
             '500 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 20.00
@@ -56,6 +80,12 @@ export default {
             '700 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 14.00
         },
         {
@@ -64,6 +94,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 20.00
@@ -76,6 +112,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 20.00
         },
         {
@@ -84,6 +126,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 30.00
@@ -96,6 +144,12 @@ export default {
             '250 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -104,6 +158,12 @@ export default {
             '250 gram',
             '250 gram',
             '250 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 11.00
@@ -116,6 +176,12 @@ export default {
             '250 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -124,6 +190,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -136,6 +208,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -144,6 +222,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 23.00
@@ -156,6 +240,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 26.00
         },
         {
@@ -164,6 +254,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 45.00
@@ -176,6 +272,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 45.00
         },
         {
@@ -184,6 +286,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 45.00
@@ -196,6 +304,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 45.00
         },
         {
@@ -204,6 +318,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 45.00
@@ -216,6 +336,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 45.00
         },
         {
@@ -224,6 +350,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 57.00
@@ -236,6 +368,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 57.00
         },
         {
@@ -246,6 +384,12 @@ export default {
             '1000 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 57.00
         },
         {
@@ -254,6 +398,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 55.00
@@ -266,6 +416,12 @@ export default {
             '1500 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 75.00
         },
         {
@@ -274,6 +430,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 65.00
@@ -286,6 +448,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 14.00
         },
         {
@@ -294,6 +462,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 14.00
@@ -306,6 +480,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -314,6 +494,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 16.00
@@ -326,6 +512,12 @@ export default {
             '350 грамм Кальмары гриль, отварной картофель и сфекла',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 15.00
         },
         {
@@ -334,6 +526,12 @@ export default {
             '350 gram Stuffed with cheese and smoked ham',
             '350 gram Calamari rippeni prosciutto a formaggio',
             '350 грамм Кальмары фаршированные копченой ветчиной и сыром',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 18.00
@@ -346,6 +544,12 @@ export default {
             '350 грамм Кальмары фаршированные креветками',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 18.00
         },
         {
@@ -354,6 +558,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 13.00
@@ -366,6 +576,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 22.00
         },
         {
@@ -374,6 +590,12 @@ export default {
             '500 gram',
             '500 gram',
             '500 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 45.00
@@ -386,6 +608,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 22.00
         },
         {
@@ -394,6 +622,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 22.00

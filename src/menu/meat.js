@@ -16,6 +16,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 22.00
         },
         {
@@ -24,6 +30,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 24.00
@@ -36,6 +48,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 24.00
         },
         {
@@ -44,6 +62,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 22.00
@@ -56,6 +80,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 24.00
         },
         {
@@ -64,6 +94,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 28.00
@@ -76,6 +112,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 20.00
         },
         {
@@ -84,6 +126,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 28.00
@@ -96,6 +144,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 24.00
         },
         {
@@ -104,6 +158,12 @@ export default {
             '450 gram',
             '450 gram',
             '450 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 45.00
@@ -116,6 +176,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -124,6 +190,12 @@ export default {
             '450 gram',
             '450 gram',
             '450 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 22.00
@@ -136,6 +208,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 14.00
         },
         {
@@ -144,6 +222,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 15.00
@@ -156,6 +240,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -164,6 +254,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 20.00
@@ -176,6 +272,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 20.00
         },
         {
@@ -184,6 +286,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 22.00
@@ -195,6 +303,12 @@ export default {
             '300 gram',
             '300 грамм'
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 18.00
         },
         {
@@ -203,6 +317,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 18.00
@@ -215,6 +335,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 16.00
         },
         {
@@ -223,6 +349,12 @@ export default {
             '350 gram',
             '350 gram',
             '350 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -235,6 +367,12 @@ export default {
             '350 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -243,6 +381,12 @@ export default {
             'Направљен од најбољих састојака са најбољих места на свету. Гурмани долазе из целог света да пробају',
             'Made with the best ingredients from the best places in the world. Gourmets come from all over the world to try it',
             'Приготовлено из лучших ингридиентов, собранных из самых лучших мест мира. Гурманы приезжают со всего света, чтобы это попробовать',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 15.00
@@ -255,6 +399,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 11.00
         },
         {
@@ -263,6 +413,12 @@ export default {
             '300 gram',
             '300 gram',
             '300 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -275,6 +431,12 @@ export default {
             '300 грамм',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 11.00
         },
         {
@@ -283,6 +445,12 @@ export default {
             '1000 gram',
             '1000 gram',
             '1000 грамм',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 35.00
@@ -294,6 +462,12 @@ export default {
             '800 gram Ramsteak, medallions of veal, pork, grilled chicken, grilled steak montenegro, garnishing with meat french fries and vegetables',
             '800 грамм Специальное блюдо Жардини (Рамстейк, медальены из свинины, курица на гриле, негушский стейк, картофель фри и офощи',
             '800 gram Bistecca di manzo, medaglioni di vitello, maiale, pollo alla griglia, bistecca alla griglia Montenegra, guarnire la carne la con patatine fritte e verdure fritte'
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
           ),
           price: 50.00
         }

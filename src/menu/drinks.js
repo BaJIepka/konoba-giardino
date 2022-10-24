@@ -10,7 +10,14 @@ export default {
       items: [
         {
           name: i18n('Espresso', 'Espresso', 'Espresso', 'Espresso'),
-          description: i18n('',
+          description: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
+          weight: i18n(
+            '',
             '',
             '',
             ''
@@ -24,11 +31,23 @@ export default {
             '',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 2.00
         },
         {
           name: i18n('Espresso cream', 'Espresso cream', 'Espresso cream', 'Espresso cream'),
           description: i18n('',
+            '',
+            '',
+            ''
+          ),
+          weight: i18n(
+            '',
             '',
             '',
             ''
@@ -42,11 +61,23 @@ export default {
             '',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 2.00
         },
         {
           name: i18n('Nescafe', 'Nescafe', 'Nescafe', 'Nescafe'),
           description: i18n('',
+            '',
+            '',
+            ''
+          ),
+          weight: i18n(
+            '',
             '',
             '',
             ''
@@ -61,6 +92,12 @@ export default {
             '',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.00,
           img: require('@/assets/img/categories/drinks/ice-coffe.png')
         },
@@ -71,12 +108,24 @@ export default {
             '',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00,
           img: require('@/assets/img/categories/drinks/hot-chocolate.jpg')
         },
         {
           name: i18n('Caj', 'Tea', 'Чай', 'Tea'),
           description: i18n('',
+            '',
+            '',
+            ''
+          ),
+          weight: i18n(
+            '',
             '',
             '',
             ''
@@ -96,6 +145,12 @@ export default {
             '200 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -103,6 +158,12 @@ export default {
           description: i18n('200 ml',
             '200 ml',
             '200 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.00,
@@ -115,6 +176,12 @@ export default {
             '200 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.50,
           img: require('@/assets/img/categories/drinks/orange-juice.jpg')
         },
@@ -123,6 +190,12 @@ export default {
           description: i18n('200 ml',
             '200 ml',
             '200 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50,
@@ -135,6 +208,12 @@ export default {
             '250 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00,
           img: require('@/assets/img/categories/drinks/colafantasprite.jpg')
         },
@@ -143,6 +222,12 @@ export default {
           description: i18n('330 ml',
             '330 ml',
             '330 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.00,
@@ -155,6 +240,12 @@ export default {
             '330 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00,
           img: require('@/assets/img/categories/drinks/colafantasprite.jpg')
         },
@@ -163,6 +254,12 @@ export default {
           description: i18n('330 ml',
             '330 ml',
             '330 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 5.00,
@@ -181,6 +278,12 @@ export default {
             '1000 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.50,
           img: require('@/assets/img/categories/drinks/knjazmilosh1000.jpg')
         },
@@ -190,6 +293,12 @@ export default {
             '250 ml',
             '250 ml',
             '250 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.00,
@@ -203,6 +312,12 @@ export default {
             '1000 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.50,
           img: require('@/assets/img/categories/drinks/rosa1000.jpg')
         },
@@ -212,6 +327,12 @@ export default {
             '250 ml',
             '250 ml',
             '250 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.00,

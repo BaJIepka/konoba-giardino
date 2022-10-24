@@ -15,6 +15,12 @@ export default {
             '450 грамм Соус, сыр, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 8.00
         },
         {
@@ -22,6 +28,12 @@ export default {
           description: i18n('450 gram Sauce, cheese, eff, olives',
             '450 gram Salsa, formaggio, uovo, olive',
             '450 грамм Соус, сыр, яйца, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 8.50
@@ -33,6 +45,12 @@ export default {
             '450 грамм Соус, ветчина, сыр, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 9.00
         },
         {
@@ -40,6 +58,12 @@ export default {
           description: i18n('450 gram Sauce, mushrooms, cheese, olives',
             '450 gram Sugo, funghi, formaggio, olive',
             '450 грамм Соус, сыр, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 9.00
@@ -51,6 +75,12 @@ export default {
             '450 грамм Соус, ветчина, грибы, сыр, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 9.00
         },
         {
@@ -58,6 +88,12 @@ export default {
           description: i18n('450 gram Sauce, ham, peppers, pepperoni, olives',
             '450 gram Sugo, prosciutto, pepe, peperoncino, olive',
             '450 грамм Соус, ветчина, перец, пепперони, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 10.00
@@ -69,6 +105,12 @@ export default {
             '450 грамм Соус, ветчина, сыр, тунец, сладкий перец, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 10.00
         },
         {
@@ -76,6 +118,12 @@ export default {
           description: i18n('450 gram Sauce, ham, mushrooms, cheese, eggs, olives',
             '450 gram Sugo, prosciutto, funghi, formaggio, uova, olive',
             '450 грамм Соус, ветчина,грибы, сыр, яйца, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 11.00
@@ -87,6 +135,12 @@ export default {
             '450 грамм Соус, ветчина,грибы, сыр, копченная ветчина, сметана, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -94,6 +148,12 @@ export default {
           description: i18n('450 gram Sauce, cheese,vegetables, olives',
             '450 gram Sugo, formaggio, verdure, olive',
             '450 грамм Соус, сыр, овощи, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 11.00
@@ -105,6 +165,12 @@ export default {
             '450 грамм Соус, сыр, ананас',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 10.00
         },
         {
@@ -112,6 +178,12 @@ export default {
           description: i18n('450 gram Sauce, four kinds of cheese',
             '450 gram Sugo, quattro formaggio',
             '450 грамм Соус, четыре вида сыра',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -123,6 +195,12 @@ export default {
             '450 грамм Соус, ветчина, сыр, яйца, артишоки, грибы, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -130,6 +208,12 @@ export default {
           description: i18n('450 gram Sauce, ham, cheese, mushrooms, sour cream',
             '450 gram Sugo, prosciutto, formaggio, funghi, panna accida',
             '450 грамм Соус, ветчина, сыр, грибы, сметана',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 11.00
@@ -141,6 +225,12 @@ export default {
             '450 грамм Соус, ветчина, сыр, бекон, фасоль, колбаса, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -148,6 +238,12 @@ export default {
           description: i18n('450 gram Sauce, calamari, mussels, tuna, cheese, olives',
             '450 gram Sugo, calamari, cozze, tonno, formaggio, olive',
             '450 грамм Соус, кальмары, мидии, тунец,  сыр, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00
@@ -159,6 +255,12 @@ export default {
             '450 грамм Соус, кальмары, мидии, креветк,  сыр, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -168,6 +270,12 @@ export default {
             '450 грамм Соус, сыр, копченная ветчина, анчоусы, оливки',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 12.00
         },
         {
@@ -175,6 +283,12 @@ export default {
           description: i18n('450 gram Sauce, cheese, salted fish, onions, chili, olives',
             '450 gram Salca, formaggio, pesce salato, cipolle, peperoncini, olive',
             '450 грамм Соус, сыр, соленая рыба, лук, перец, оливки',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 12.00

@@ -16,12 +16,15 @@
       <div v-for="(div, di) in categ.divs" :key="di" class="mt-15">
         <div class="div-name" v-if="categ.divs.length > 1">{{ div.name }}</div>
         <div v-for="(item, j) in div.items" :key="j" class="dish-box mt-10">
-          <div v-if="item.img"><img :src="item.img" alt=""></div>
-          <div v-else><img src="@/assets/img/restaurant.jpg" alt=""></div>
+          <div v-if="item.img" class="mb-5">
+            <img :src="item.img" alt="">
+          </div>
           <div class="dish-text">
-            <div class="level mt-5">
-              <div class="dish-name">{{ item.name }}</div>
-              <div class="d-flex ai-center">
+            <div class="dish-name">{{ item.name }}</div>
+            <div class="dish-desc">{{ item.description }}</div>
+            <div class="level ai-center mt-3">
+              <div class="dish-weight">{{ item.weight }}</div>
+              <div class="dish-price-count d-flex ai-center">
                 <div class="dish-price">€{{ item.price }}</div>
                 <div v-if="!state.cart[item.id]" class="dish-add-button" @click="state.cart[item.id] = 1">+</div>
                 <div v-else class="d-flex dish-counts">
@@ -31,7 +34,6 @@
                 </div>
               </div>
             </div>
-            <div class="dish-desc mt-10">{{ item.description }}</div>
           </div>
         </div>
       </div>
@@ -148,6 +150,7 @@ export default {
   padding: 8px;
 }
 .dish-name {
+  font-size: 1.1em;
   font-weight: bold;
 }
 .dish-price {
@@ -170,12 +173,12 @@ export default {
   font-size: 1.2em;
 }
 .dish-add-button {
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .remove-btn {
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
 }
 .add-btn {
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
 }
 </style>

@@ -56,6 +56,9 @@ h1, h2, h3, h4, h5, h6 {
 .mt-0 {
   margin-top: 0 !important;
 }
+.mt-3 {
+  margin-top: 3px !important;
+}
 .mt-5 {
   margin-top: 5px !important;
 }
@@ -64,6 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mt-15 {
   margin-top: 15px !important;
+}
+.mb-5 {
+  margin-bottom: 5px !important;
 }
 .box {
   /* border: 1px solid #cccccc; */
@@ -84,6 +90,9 @@ img {
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-fill {
+  flex: 1;
 }
 .ai-end {
   align-items: end;

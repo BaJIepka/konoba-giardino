@@ -13,26 +13,29 @@
         )
       }}
     </div>
-    <div v-for="(count, id) in state.cart" :key="id" class="dish-box level mt-5">
-      <div class="d-flex ai-center">
-        <div class="img">
-          <img v-if="menuById[id].img" :src="menuById[id].img" alt="">
-        </div>
-        <div class="dish-name ml-15">{{ menuById[id].name }}</div>
+    <div v-for="(count, id) in state.cart" :key="id" class="dish-box d-flex mt-5">
+      <div class="img">
+        <div v-if="menuById[id].img" :style="{ 'background-image': 'url(' + menuById[id].img + ')' }" />
       </div>
-      <div class="d-flex flex-col ai-end">
-        <div>€{{ menuById[id].price.toFixed(2) }} x {{ count }} = €{{ (menuById[id].price * count).toFixed(2) }}</div>
-        <div class="d-flex ai-center">
-          <div v-if="!state.cart[id]" class="dish-add-button" @click="state.cart[id] = 1">+</div>
-          <div v-else class="d-flex dish-counts">
-            <div class="remove-btn" @click="remove(menuById[id])">-</div>
-            <div class="add-btn" @click="state.cart[id]++">+</div>
+      <div class="flex-fill ml-15">
+        <div class="dish-name">{{ menuById[id].name }}</div>
+        <div class="dish-weight">{{ menuById[id].weight || '450gram' }}</div>
+        <div class="level ai-center">
+          <div>
+            <strong class="dish-count">{{ count }}</strong> x €{{ menuById[id].price.toFixed(2) }} = <strong>€{{ (menuById[id].price * count).toFixed(2) }}</strong></div>
+          <div class="d-flex ai-center">
+            <div v-if="!state.cart[id]" class="dish-add-button" @click="state.cart[id] = 1">+</div>
+            <div v-else class="d-flex dish-counts">
+              <div class="remove-btn" @click="remove(menuById[id])">-</div>
+              <div class="add-btn" @click="state.cart[id]++">+</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-15 text-center total">
-      <strong>{{ i18n('Total', 'Total', 'Итого', 'Total') }}: €{{ Object.entries(state.cart).reduce((acc, [id, count]) => acc + (menuById[id].price * count), 0).toFixed(2) }}</strong>
+    <div class="text-center mt-10 total level">
+      <div><strong>{{ i18n('Total', 'Total', 'Итого', 'Total') }}:</strong></div>
+      <div><strong>€{{ Object.entries(state.cart).reduce((acc, [id, count]) => acc + (menuById[id].price * count), 0).toFixed(2) }}</strong></div>
     </div>
   </BaseLayout>
   <Modal v-if="removingItem" @close="removingItem = null">
@@ -108,9 +111,12 @@ export default {
   font-size: 1.3em;
   margin-right: 5px;
 }
-.dish-desc {
+.dish-weight {
   color: #999999;
   font-size: 0.7em;
+}
+.dish-count {
+  font-size: 1.2em;
 }
 .dish-counts {
   justify-content: flex-end;
@@ -132,8 +138,11 @@ export default {
 .img {
   width: 80px;
 }
-.img img {
-  display: block;
+.img > div {
+  width: 100%;
+  height: 100%;
+  max-height: 68px;
+  background-size: cover;
   border-radius: 7px;
 }
 .remove-btn {
@@ -144,5 +153,7 @@ export default {
 }
 .total {
   font-size: 1.2em;
+  margin-bottom: 100px;
+  padding: 0 10px;
 }
 </style>

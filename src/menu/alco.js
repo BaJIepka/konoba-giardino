@@ -15,6 +15,12 @@ export default {
             '330 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.00
         },
         {
@@ -22,6 +28,12 @@ export default {
           description: i18n('250 ml',
             '250 ml',
             '250 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50
@@ -33,6 +45,12 @@ export default {
             '330 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -42,6 +60,12 @@ export default {
             '330 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -49,6 +73,12 @@ export default {
           description: i18n('500 ml',
             '500 ml',
             '500 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.00
@@ -65,6 +95,12 @@ export default {
             '100 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 6.00
         },
         {
@@ -72,6 +108,12 @@ export default {
           description: i18n('100 ml',
             '100 ml',
             '100 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.00
@@ -83,6 +125,12 @@ export default {
             '100 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.00
         },
         {
@@ -90,6 +138,12 @@ export default {
           description: i18n('100 ml',
             '100 ml',
             '100 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.00
@@ -101,6 +155,12 @@ export default {
             '100 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.00
         },
         {
@@ -108,6 +168,12 @@ export default {
           description: i18n('100 ml',
             '100 ml',
             '100 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 4.00
@@ -124,6 +190,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.50
         },
         {
@@ -131,6 +203,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.00
@@ -142,6 +220,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 2.00
         },
         {
@@ -149,6 +233,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.00
@@ -160,6 +250,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -169,6 +265,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -176,6 +278,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.00
@@ -192,6 +300,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.00
         },
         {
@@ -199,6 +313,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.50
@@ -210,6 +330,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 2.50
         },
         {
@@ -217,6 +343,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.50
@@ -228,6 +360,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 2.50
         },
         {
@@ -235,6 +373,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 2.50
@@ -251,6 +395,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 5.00
         },
         {
@@ -258,6 +408,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 5.00
@@ -269,6 +425,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.50
         },
         {
@@ -276,6 +438,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50
@@ -288,6 +456,12 @@ export default {
             '50 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.50
         },
         {
@@ -295,6 +469,12 @@ export default {
           description: i18n('50 ml',
             '50 ml',
             '50 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50
@@ -306,6 +486,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.50
         },
         {
@@ -313,6 +499,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50
@@ -324,6 +516,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.50
         },
         {
@@ -331,6 +529,12 @@ export default {
           description: i18n('30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50
@@ -344,6 +548,12 @@ export default {
             '30 ml',
             ''
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 3.50
         },
         {
@@ -352,6 +562,12 @@ export default {
             '30 ml',
             '30 ml',
             '30 ml',
+            ''
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
             ''
           ),
           price: 3.50

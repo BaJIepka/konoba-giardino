@@ -15,6 +15,12 @@ export default {
             // 'Made with the best ingredients from the best places in the world. Gourmets come from all over the world to try it',
             // 'Приготовлено из лучших ингридиентов, собранных из самых лучших мест мира. Гурманы приезжают со всего света, чтобы это попробовать'
           ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
+          ),
           price: 4.50,
           img: require('@/assets/img/categories/salads/shopskij.jpeg')
         },
@@ -24,6 +30,12 @@ export default {
             // 'Направљен од најбољих састојака са најбољих места на свету. Гурмани долазе из целог света да пробају',
             // 'Made with the best ingredients from the best places in the world. Gourmets come from all over the world to try it',
             // 'Приготовлено из лучших ингридиентов, собранных из самых лучших мест мира. Гурманы приезжают со всего света, чтобы это попробовать'
+          ),
+          weight: i18n(
+            '',
+            '',
+            '',
+            ''
           ),
           price: 4.50
         }
